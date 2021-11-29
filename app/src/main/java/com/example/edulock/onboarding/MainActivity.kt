@@ -8,13 +8,13 @@ import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.button.MaterialButton
 import com.example.edulock.HalamanUtama
 import com.example.edulock.R
+import com.example.edulock.login
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         setCurrentIndicator(0)
 
         if (restorePrefData()) {
-            val intent = Intent(this, HalamanUtama:: class.java).also {
+            val intent = Intent(this, login:: class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             }
             startActivity(intent)
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
             if (onboardingViewPager.currentItem + 1 < onboardingItemsAdapter.itemCount ) {
                 onboardingViewPager.currentItem += 1
             } else {
-                val intent = Intent(this, HalamanUtama:: class.java).also {
+                val intent = Intent(this, login:: class.java).also {
                     it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 }
                 startActivity(intent)

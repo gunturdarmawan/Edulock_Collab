@@ -13,4 +13,8 @@
     <string name="login_failed">"Login failed"</string>
     <string name="login">Login</string>
     <string name="ini_ruang_utama">Ini Ruang Utama</string>
+    <string name="edulock">EduLock</string>
+    <string name="mengatur_penggunaan_aplikasi_untuk_anak_dengan_edukasi">Mengatur penggunaan aplikasi untuk anak dengan edukasi.</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar_di_sini">Daftar di Sini</string>
 </resources>

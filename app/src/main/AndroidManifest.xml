@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Edulock">
         <activity
+            android:name=".firebaseauth.Register"
+            android:exported="false" />
+        <activity
             android:name=".firebaseauth.login"
             android:exported="false" />
         <activity

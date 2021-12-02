@@ -12,9 +12,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.button.MaterialButton
-import com.example.edulock.HalamanUtama
 import com.example.edulock.R
-import com.example.edulock.login
+import com.example.edulock.firebaseauth.login
 
 
 class MainActivity : AppCompatActivity() {

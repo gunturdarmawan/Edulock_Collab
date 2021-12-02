@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Edulock">
         <activity
-            android:name=".login"
+            android:name=".firebaseauth.login"
             android:exported="false" />
         <activity
             android:name=".HalamanUtama"

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.button.MaterialButton
 import com.example.edulock.R
-import com.example.edulock.firebaseauth.login
+import com.example.edulock.firebaseauth.Login
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         setCurrentIndicator(0)
 
         if (restorePrefData()) {
-            val intent = Intent(this, login:: class.java).also {
+            val intent = Intent(this, Login:: class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             }
             startActivity(intent)
@@ -47,8 +47,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun restorePrefData(): Boolean {
-        val pref =
-            applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
+        val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
         return pref.getBoolean("isIntroOpened", false)
     }
 
@@ -88,7 +87,7 @@ class MainActivity : AppCompatActivity() {
             if (onboardingViewPager.currentItem + 1 < onboardingItemsAdapter.itemCount ) {
                 onboardingViewPager.currentItem += 1
             } else {
-                val intent = Intent(this, login:: class.java).also {
+                val intent = Intent(this, Login:: class.java).also {
                     it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 }
                 startActivity(intent)
@@ -144,11 +143,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
         if (position == onboardingItemsAdapter.itemCount - 1){
-            findViewById<MaterialButton>(R.id.buttonNext).text = "Get Started"
+            "Get Started".also { findViewById<MaterialButton>(R.id.buttonNext).text = it }
             findViewById<TextView>(R.id.textSkip).visibility = View.INVISIBLE
         } else {
             findViewById<TextView>(R.id.textSkip).visibility = View.VISIBLE
-            findViewById<MaterialButton>(R.id.buttonNext).text = "Next"
+            "Next".also { findViewById<MaterialButton>(R.id.buttonNext).text = it }
         }
     }
 }

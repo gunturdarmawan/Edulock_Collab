@@ -18,4 +18,11 @@
     <string name="belum_punya_akun">Belum punya akun?</string>
     <string name="daftar_di_sini">Daftar di Sini</string>
     <string name="daftar">Daftar</string>
+    <string name="logout">Logout</string>
+    <string name="home_page_edulock">Home Page EduLock</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="silakan_isi_data_data_di_bawah_dengan_benar">Silakan isi data-data di bawah dengan benar.</string>
+    <string name="email">Email</string>
+    <string name="simpan_dan_lanjut">Simpan dan Lanjut</string>
 </resources>

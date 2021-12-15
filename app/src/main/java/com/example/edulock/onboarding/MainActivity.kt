@@ -15,7 +15,6 @@ import com.google.android.material.button.MaterialButton
 import com.example.edulock.R
 import com.example.edulock.firebaseauth.Login
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var onboardingItemsAdapter: OnboardingItemsAdapter
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.statusBarColor = ContextCompat.getColor(this, R.color.white)
         setContentView(R.layout.activity_main)
 
         setOnboardingItems()
@@ -38,13 +36,13 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
     private fun savePrefsData() {
         val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
         val editor = pref.edit()
         editor.putBoolean("isIntroOpened", true)
         editor.apply()
     }
-
 
     private fun restorePrefData(): Boolean {
         val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
@@ -150,4 +148,5 @@ class MainActivity : AppCompatActivity() {
             "Next".also { findViewById<MaterialButton>(R.id.buttonNext).text = it }
         }
     }
+
 }

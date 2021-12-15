@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/ghost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/layout_corner_radius"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dragable"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Pembahasan"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Soal:"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/custom_color_text_secondary"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="9 x (12:4) + 10 = ?"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/custom_color_text_secondary"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Jawaban: 37"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/custom_color_text_secondary"/>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pada pembagian dan perkalian memiliki nilai prioritas hitung yang sama kuat, namun jika terdapat kurung buka, maka hitungan dalam kurung buka terlebih dahulu yang dihitung."
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/custom_color_text_secondary"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".combine.ChooseUser">
+
+    <LinearLayout
+        android:background="@drawable/smartphone"
+        android:id="@+id/img_pilihAkun"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="120dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="65dp"
+            android:layout_marginVertical="55dp"
+            android:src="@drawable/ic_lock"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_pilihAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Terkunci"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintTop_toBottomOf="@+id/img_pilihAkun"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/desc_pilihAkun"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi otomatis terbuka ketika kamu berhasil menjawab soal"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/custom_color_text_secondary"
+        app:layout_constraintTop_toBottomOf="@+id/title_pilihAkun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPilihAkun"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:text="Pilih Akun"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        android:backgroundTint="@color/custom_color_primary"
+        app:layout_constraintTop_toBottomOf="@+id/desc_pilihAkun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/buttonEditAkun"
+        android:layout_width="320dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:text="Edit Akun"
+        android:outlineAmbientShadowColor="@color/custom_color_primary"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:strokeWidth="2dp"
+        app:rippleColor="@color/custom_color_primary"
+        app:strokeColor="@color/custom_color_primary"
+        android:textColor="@color/custom_color_primary"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPilihAkun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
